@@ -13,13 +13,11 @@ hexo.extend.helper.register('next_env', type => {
 });
 
 hexo.extend.helper.register('canonical', function() {
-  const permalink = hexo.config.permalink;
+  const pretty_urls = hexo.config.pretty_urls;
   const canonical = hexo.theme.config.canonical;
   if (!canonical) return '';
-  var url = this.url.replace(/index\.html$/, '');
-  if (!permalink.endsWith('.html')) {
-    url = url.replace(/\.html$/, '');
-  }
+  var url = this.url;
+  if (pretty_urls && pretty_urls.trailing_index) url = url.replace(/index\.html$/, '');
   return `<link rel="canonical" href="${url}">`;
 });
 
