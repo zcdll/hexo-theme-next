@@ -640,7 +640,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
   appid: gp5udvpHnNJ3p4pUwoxI7Orp-gzGzoHsz
   appkey: hBcmnbod2qG3t7K4XecG6Y7Y
   notify: true # Mail notifier. See: https://github.com/xCss/Valine/wiki
@@ -664,7 +664,7 @@ livere_uid: # <your_uid>
 # Demo: https://gitalk.github.io
 # For more information: https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: zcdll # GitHub repo owner
   repo: zcdll-blog-gittalk # Repository name to store issues
   client_id: Iv1.2e4065f056c71d53 # GitHub Application Client ID
